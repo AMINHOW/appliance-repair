@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
+import { HiOutlineMenu } from "react-icons/hi";
 import {
   motion,
   AnimatePresence,
@@ -12,6 +13,7 @@ import { MotionDiv, MotionP } from "@/lib/framer-motion";
 import Image from 'next/image';
 import logo from "../../public/logo-horizontal.png"
 import MagicButton from "./ui/MagicButton";
+import { Button } from "./ui/button";
 
 export function NavbarDemo() {
   const [isAtTop, setIsAtTop] = useState<boolean>(true);
@@ -113,7 +115,10 @@ function Navbar({ className, isAtTop, visible }: { className?: string; isAtTop: 
               </div>
             </MenuItem>
           </MotionDiv>
-          <MagicButton button="hidden lg:felx xl:flex h-8" border="bg-[conic-gradient(from_90deg_at_50%_50%,#FFFFFF_0%,#04cf9c_50%,#FFFFFF_100%)] " content="bg-white text-[#1c1f48] hover:bg-[#04cf9c] " title="Order Now" />
+          <MagicButton button="hidden lg:felx xl:flex h-8 hover:scale-110" border="bg-[conic-gradient(from_90deg_at_50%_50%,#FFFFFF_0%,#04cf9c_50%,#FFFFFF_100%)] " content="bg-white text-[#1c1f48] hover:bg-[#04cf9c] " title="Order Now" />
+          <div className="flex lg:hidden w-10 h-10 items-center justify-center">
+            <HiOutlineMenu className="cursor-pointer text-[#1c1f48] hover:text-[#04cf9c] w-6 h-6 hover:w-7 hover:h-7 transition-all duration-100" />
+          </div>
         </Menu>
       </MotionDiv>
     </AnimatePresence>

@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import WordRotate from "./word-rotate";
+import WordRotate from "./text/word-rotate";
 
 interface Props {
   max: number;

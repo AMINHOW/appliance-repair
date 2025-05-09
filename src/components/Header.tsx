@@ -9,6 +9,7 @@ import { NavbarDemo } from './Navbar';
 
 
 
+
 function Header() {
   return (
     <div className='w-full h-fit flex flex-col items-center justify-start'> {/**h-36 */}
@@ -19,11 +20,11 @@ function Header() {
               <CallIcon sx={{ width: '20px', height: '20px', color: "#04cf9c" }} />
               <div className='text-base text-white font-lato tracking-normal font-extrabold ml-3'>(+212) 670687954</div>
             </div>
-            <div className='w-auto flex items-center justify-center flex-row'>
+            <div className='hidden w-auto lg:flex items-center justify-center flex-row'>
               <DraftsIcon sx={{ width: '20px', height: '20px', color: "#04cf9c" }} />
               <div className='text-base text-white font-lato tracking-normal font-extrabold ml-3'>tabridrraha@airepair.com</div>
             </div>
-            <div className='w-auto flex items-center justify-center flex-row'>
+            <div className='hidden w-auto lg:flex items-center justify-center flex-row'>
               <LocationOnIcon sx={{ width: '20px', height: '20px', color: "#04cf9c" }} />
               <div className='text-base text-white font-lato tracking-normal font-extrabold ml-3'>Rabat MA</div>
             </div>

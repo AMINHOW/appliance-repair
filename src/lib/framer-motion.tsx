@@ -13,3 +13,15 @@ export const MotionSpan = motion.span as React.FC<MotionSpanProps>
 export const MotionH2 = motion.h2 as React.FC<MotionH2Props>
 export const MotionP = motion.p as React.FC<MotionPProps>
 export const MotionA = motion.a as React.FC<MotionAProps>
+
+export const slideInFromBottom = {
+  hidden: { y: -100, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      duration: 0.5,
+    },
+  },
+};
